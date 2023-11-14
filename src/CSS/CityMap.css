@@ -1,10 +1,20 @@
-#abc{
--fx-background-color: green;
+#abc {
+    -fx-background-color: green;
     -fx-text-fill: red;
 }
-#scene{
+
+#scene {
     -fx-background-color: lightblue;
 }
-#map{
+
+#map {
     -fx-background-color: #F5F5DC;
+}
+
+.first-clicked {
+    -fx-fill: green;
+}
+
+.second-clicked {
+    -fx-fill: red;
 }
