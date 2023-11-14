@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane id="map" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../CSS/CityMap.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="47.0" endY="192.0" layoutX="945.0" layoutY="142.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
+      <Line endX="-168.0" endY="-115.0" layoutX="883.0" layoutY="184.0" startX="-103.0" startY="-24.0" strokeWidth="2.0" />
+      <Line endX="49.0" endY="-20.0" layoutX="948.0" layoutY="139.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-39.0" endY="20.0" layoutX="818.0" layoutY="139.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-168.0" endY="-115.0" layoutX="643.0" layoutY="184.0" startX="-168.0" startY="87.0" strokeWidth="2.0" />
+      <Line endX="9.0" endY="20.0" layoutX="467.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-24.0" endY="-9.0" layoutX="492.0" layoutY="307.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-168.0" endY="-119.0" layoutX="339.0" layoutY="323.0" startX="-95.0" startY="67.0" strokeWidth="2.0" />
+      <Line endX="24.0" endY="-77.0" layoutX="219.0" layoutY="468.0" startX="-93.0" startY="67.0" strokeWidth="2.0" />
+      <Line endX="-168.0" endY="-124.0" layoutX="209.0" layoutY="458.0" startX="-93.0" startY="67.0" strokeWidth="2.0" />
+      <Line endX="-168.0" endY="-115.0" layoutX="208.0" layoutY="184.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-39.0" endY="20.0" layoutX="208.0" layoutY="48.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-39.0" endY="20.0" layoutX="208.0" layoutY="184.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Circle fill="DODGERBLUE" layoutX="41.0" layoutY="68.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="-168.0" endY="-115.0" layoutX="208.0" layoutY="313.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Circle fill="DODGERBLUE" layoutX="41.0" layoutY="334.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="244.0" layoutY="390.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="-39.0" endY="20.0" layoutX="340.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="121.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.png" />
+         </image>
+      </ImageView>
+      <Line endX="-168.0" endY="-115.0" layoutX="470.0" layoutY="184.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Circle fill="DODGERBLUE" layoutX="302.0" layoutY="67.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="-39.0" endY="20.0" layoutX="340.0" layoutY="183.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Circle fill="DODGERBLUE" layoutX="171.0" layoutY="204.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="8.0" endY="107.0" layoutX="467.0" layoutY="184.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
+      <Line endX="-168.0" endY="-115.0" layoutX="471.0" layoutY="321.0" startX="-147.0" startY="3.0" strokeWidth="2.0" />
+      <Circle fill="DODGERBLUE" layoutX="302.0" layoutY="203.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="325.0" layoutY="327.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="40.0" layoutY="204.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="8.0" endY="107.0" layoutX="641.0" layoutY="51.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
+      <Circle fill="DODGERBLUE" layoutX="650.0" layoutY="159.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="780.0" layoutY="160.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="61.0" endY="20.0" layoutX="651.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="38.0" endY="20.0" layoutX="959.0" layoutY="48.0" startX="-246.0" startY="20.0" strokeWidth="2.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="980.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/forest.png" />
+         </image>
+      </ImageView>
+      <Circle fill="DODGERBLUE" layoutX="476.0" layoutY="67.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="713.0" layoutY="67.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="-168.0" endY="-115.0" layoutX="1148.0" layoutY="479.0" startX="-206.0" startY="11.0" strokeWidth="2.0" />
+      <Line endX="51.2928466796875" endY="20.70709228515625" layoutX="890.0" layoutY="470.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-10.0" endY="117.0" layoutX="1127.0" layoutY="470.0" startX="-185.0" startY="21.4141845703125" strokeWidth="2.0" />
+      <Line endX="-39.0" endY="20.0" layoutX="1161.0" layoutY="586.0" startX="-241.0" startY="34.0" strokeWidth="2.0" />
+      <Line endX="16.2928466796875" endY="127.70709228515625" layoutX="903.0" layoutY="493.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-103.0" endY="194.0" layoutX="1084.0" layoutY="600.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-39.0" endY="20.0" layoutX="711.0" layoutY="492.0" startX="-177.0" startY="111.0" strokeWidth="2.0" />
+      <Line endX="-39.0" endY="20.0" layoutX="578.0" layoutY="583.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
+      <Line endX="-171.0" endY="192.0" layoutX="588.0" layoutY="593.0" startX="-236.70709228515625" startY="32.70709228515625" strokeWidth="2.0" />
+      <Line endX="-434.0" endY="-34.0" layoutX="588.0" layoutY="593.0" startX="-237.4141845703125" startY="32.0" strokeWidth="2.0" />
+      <Line endX="-471.0" endY="-35.0" layoutX="588.0" layoutY="593.0" startX="-441.0" startY="146.0" strokeWidth="2.0" />
+      <Line endX="-25.4141845703125" endY="-71.0" layoutX="376.0" layoutY="696.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
+      <Line endX="23.0" endY="123.0" layoutX="369.0" layoutY="696.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
+      <Line endX="30.0" endY="14.0" layoutX="659.0" layoutY="768.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
+      <Line endX="-6.0" endY="79.0" layoutX="961.0" layoutY="759.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="665.0" layoutY="737.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gym.png" />
+         </image>
+      </ImageView>
+      <Line endX="-43.0" endY="-5.0" layoutX="502.0" layoutY="317.0" startX="-76.0" startY="105.0" strokeWidth="2.0" />
+      <Line endX="61.0" endY="84.0" layoutX="594.0" layoutY="400.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-34.70709228515625" endY="-1.29290771484375" layoutX="460.0" layoutY="424.0" startX="-108.70709228515625" startY="201.70709228515625" strokeWidth="2.0" />
+      <Circle fill="DODGERBLUE" layoutX="425.0" layoutY="419.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="351.0" layoutY="624.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="148.0" layoutY="737.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="533.0" layoutY="604.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="920.0" layoutY="621.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="942.0" layoutY="491.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="930.0" layoutY="759.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="1108.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/barber.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="364.0" layoutY="759.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/restaurant.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="71.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/church.png" />
+         </image>
+      </ImageView>
+      <Line endX="-24.0" endY="-9.0" layoutX="678.0" layoutY="278.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line endX="-147.29290771484375" endY="-50.70709228515625" layoutX="802.0" layoutY="319.0" startX="-69.0" startY="36.0" strokeWidth="2.0" />
+      <Line endX="83.0" endY="7.0" layoutX="903.0" layoutY="335.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="958.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/trainStation.png" />
+         </image>
+      </ImageView>
+      <Line endX="-24.0" endY="-9.0" layoutX="761.0" layoutY="365.0" startX="-72.0" startY="90.0" strokeWidth="2.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="432.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/shop.png" />
+         </image>
+      </ImageView>
+      <Circle fill="DODGERBLUE" layoutX="734.0" layoutY="355.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="654.0" layoutY="272.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="642.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/center.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_CENTER" layoutX="119.0" layoutY="120.0" prefHeight="22.0" prefWidth="100.0" text="Home" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="980.0" layoutY="142.0" prefHeight="22.0" prefWidth="100.0" text="Forest" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="949.0" layoutY="254.0" prefHeight="22.0" prefWidth="118.0" text="Train station" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="1108.0" layoutY="638.0" prefHeight="22.0" prefWidth="100.0" text="Barber" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="932.0" layoutY="864.0" prefHeight="22.0" prefWidth="100.0" text="Office" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="663.0" layoutY="839.0" prefHeight="22.0" prefWidth="100.0" text="Gym" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="360.0" layoutY="864.0" prefHeight="22.0" prefWidth="108.0" text="Restaurant" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="631.0" layoutY="536.0" prefHeight="22.0" prefWidth="118.0" text="City center" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="446.0" layoutY="330.0" prefHeight="22.0" prefWidth="145.0" text="Shopping mall" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="82.0" layoutY="445.0" prefHeight="22.0" prefWidth="100.0" text="Church" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,10 @@
+#abc{
+-fx-background-color: green;
+    -fx-text-fill: red;
+}
+#scene{
+    -fx-background-color: lightblue;
+}
+#map{
+    -fx-background-color: #F5F5DC;
+}
