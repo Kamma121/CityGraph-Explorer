@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,37 +12,37 @@
 
 <Pane id="map" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../CSS/CityMap.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CityMapController">
    <children>
-      <Line endX="47.0" endY="192.0" layoutX="945.0" layoutY="142.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
-      <Line endX="-168.0" endY="-115.0" layoutX="883.0" layoutY="184.0" startX="-103.0" startY="-24.0" strokeWidth="2.0" />
-      <Line endX="49.0" endY="-20.0" layoutX="948.0" layoutY="139.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="-39.0" endY="20.0" layoutX="818.0" layoutY="139.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="-168.0" endY="-115.0" layoutX="643.0" layoutY="184.0" startX="-168.0" startY="87.0" strokeWidth="2.0" />
-      <Line endX="9.0" endY="20.0" layoutX="467.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l1117" endX="47.0" endY="192.0" layoutX="945.0" layoutY="142.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
+      <Line fx:id="l411" endX="-168.0" endY="-115.0" layoutX="883.0" layoutY="184.0" startX="-103.0" startY="-24.0" strokeWidth="2.0" />
+      <Line fx:id="l511" endX="49.0" endY="-20.0" layoutX="948.0" layoutY="139.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l1011" endX="-39.0" endY="20.0" layoutX="818.0" layoutY="139.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l39" endX="-168.0" endY="-115.0" layoutX="643.0" layoutY="184.0" startX="-168.0" startY="87.0" strokeWidth="2.0" />
+      <Line fx:id="l23" endX="9.0" endY="20.0" layoutX="467.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
       <Line endX="-24.0" endY="-9.0" layoutX="492.0" layoutY="307.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="-168.0" endY="-119.0" layoutX="339.0" layoutY="323.0" startX="-95.0" startY="67.0" strokeWidth="2.0" />
-      <Line endX="24.0" endY="-77.0" layoutX="219.0" layoutY="468.0" startX="-93.0" startY="67.0" strokeWidth="2.0" />
-      <Line endX="-168.0" endY="-124.0" layoutX="209.0" layoutY="458.0" startX="-93.0" startY="67.0" strokeWidth="2.0" />
-      <Line endX="-168.0" endY="-115.0" layoutX="208.0" layoutY="184.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="-39.0" endY="20.0" layoutX="208.0" layoutY="48.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="-39.0" endY="20.0" layoutX="208.0" layoutY="184.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Circle id="0" fill="DODGERBLUE" layoutX="41.0" layoutY="68.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Line fx:id="l713" endX="-168.0" endY="-119.0" layoutX="339.0" layoutY="323.0" startX="-95.0" startY="67.0" strokeWidth="2.0" />
+      <Line fx:id="l1318" endX="24.0" endY="-77.0" layoutX="219.0" layoutY="468.0" startX="-93.0" startY="67.0" strokeWidth="2.0" />
+      <Line fx:id="l1218" endX="-168.0" endY="-124.0" layoutX="209.0" layoutY="458.0" startX="-93.0" startY="67.0" strokeWidth="2.0" />
+      <Line fx:id="l06" endX="-168.0" endY="-115.0" layoutX="208.0" layoutY="184.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l01" endX="-39.0" endY="20.0" layoutX="208.0" layoutY="48.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l67" endX="-39.0" endY="20.0" layoutX="208.0" layoutY="184.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Circle id="0" fx:id="c0" layoutX="41.0" layoutY="68.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Line endX="-168.0" endY="-115.0" layoutX="208.0" layoutY="313.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Circle id="12" fill="DODGERBLUE" layoutX="41.0" layoutY="334.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Line fx:id="l612" endX="-168.0" endY="-115.0" layoutX="208.0" layoutY="313.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Circle id="12" fx:id="c12" layoutX="41.0" layoutY="334.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="13" fill="DODGERBLUE" layoutX="244.0" layoutY="390.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="13" fx:id="c13" layoutX="244.0" layoutY="390.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Line endX="-39.0" endY="20.0" layoutX="340.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="121.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <Line fx:id="l12" endX="-39.0" endY="20.0" layoutX="340.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <ImageView id="1" fitHeight="100.0" fitWidth="100.0" layoutX="121.0" layoutY="14.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/home.png" />
          </image>
@@ -49,49 +50,49 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Line endX="-168.0" endY="-115.0" layoutX="470.0" layoutY="184.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Circle id="2" fill="DODGERBLUE" layoutX="302.0" layoutY="67.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Line fx:id="l28" endX="-168.0" endY="-115.0" layoutX="470.0" layoutY="184.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Circle id="2" fx:id="c2" layoutX="302.0" layoutY="67.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Line endX="-39.0" endY="20.0" layoutX="340.0" layoutY="183.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Circle id="7" fill="DODGERBLUE" layoutX="171.0" layoutY="204.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Line fx:id="l78" endX="-39.0" endY="20.0" layoutX="340.0" layoutY="183.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Circle id="7" fx:id="c7" layoutX="171.0" layoutY="204.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Line endX="8.0" endY="107.0" layoutX="467.0" layoutY="184.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
-      <Line endX="-168.0" endY="-115.0" layoutX="471.0" layoutY="321.0" startX="-147.0" startY="3.0" strokeWidth="2.0" />
-      <Circle id="8" fill="DODGERBLUE" layoutX="302.0" layoutY="203.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Line fx:id="l89" endX="8.0" endY="107.0" layoutX="467.0" layoutY="184.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
+      <Line fx:id="l814" endX="-168.0" endY="-115.0" layoutX="471.0" layoutY="321.0" startX="-147.0" startY="3.0" strokeWidth="2.0" />
+      <Circle id="8" fx:id="c8" layoutX="302.0" layoutY="203.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="14" fill="DODGERBLUE" layoutX="325.0" layoutY="327.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="14" fx:id="c14" layoutX="325.0" layoutY="327.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="6" fill="DODGERBLUE" layoutX="40.0" layoutY="204.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="6" fx:id="c6" layoutX="40.0" layoutY="204.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Line endX="8.0" endY="107.0" layoutX="641.0" layoutY="51.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
-      <Circle id="10" fill="DODGERBLUE" layoutX="650.0" layoutY="159.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Line fx:id="l310" endX="8.0" endY="107.0" layoutX="641.0" layoutY="51.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
+      <Circle id="10" fx:id="c10" layoutX="650.0" layoutY="159.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="11" fill="DODGERBLUE" layoutX="780.0" layoutY="160.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="11" fx:id="c11" layoutX="780.0" layoutY="160.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Line endX="61.0" endY="20.0" layoutX="651.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="38.0" endY="20.0" layoutX="959.0" layoutY="48.0" startX="-246.0" startY="20.0" strokeWidth="2.0" />
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="980.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+      <Line fx:id="l34" endX="61.0" endY="20.0" layoutX="651.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l45" endX="38.0" endY="20.0" layoutX="959.0" layoutY="48.0" startX="-246.0" startY="20.0" strokeWidth="2.0" />
+      <ImageView id="5" fitHeight="100.0" fitWidth="100.0" layoutX="980.0" layoutY="37.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/forest.png" />
          </image>
@@ -99,32 +100,32 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Circle id="3" fill="DODGERBLUE" layoutX="476.0" layoutY="67.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="3" fx:id="c3" layoutX="476.0" layoutY="67.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="4" fill="DODGERBLUE" layoutX="713.0" layoutY="67.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="4" fx:id="c4" layoutX="713.0" layoutY="67.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Line endX="-168.0" endY="-115.0" layoutX="1148.0" layoutY="479.0" startX="-206.0" startY="11.0" strokeWidth="2.0" />
-      <Line endX="51.2928466796875" endY="20.70709228515625" layoutX="890.0" layoutY="470.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="-10.0" endY="117.0" layoutX="1127.0" layoutY="470.0" startX="-185.0" startY="21.4141845703125" strokeWidth="2.0" />
-      <Line endX="-39.0" endY="20.0" layoutX="1161.0" layoutY="586.0" startX="-241.0" startY="34.0" strokeWidth="2.0" />
-      <Line endX="16.2928466796875" endY="127.70709228515625" layoutX="903.0" layoutY="493.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="-103.0" endY="194.0" layoutX="1084.0" layoutY="600.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="-39.0" endY="20.0" layoutX="711.0" layoutY="492.0" startX="-177.0" startY="111.0" strokeWidth="2.0" />
-      <Line endX="-39.0" endY="20.0" layoutX="578.0" layoutY="583.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
-      <Line endX="-171.0" endY="192.0" layoutX="588.0" layoutY="593.0" startX="-236.70709228515625" startY="32.70709228515625" strokeWidth="2.0" />
-      <Line endX="-434.0" endY="-34.0" layoutX="588.0" layoutY="593.0" startX="-237.4141845703125" startY="32.0" strokeWidth="2.0" />
-      <Line endX="-471.0" endY="-35.0" layoutX="588.0" layoutY="593.0" startX="-441.0" startY="146.0" strokeWidth="2.0" />
-      <Line endX="-25.4141845703125" endY="-71.0" layoutX="376.0" layoutY="696.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
-      <Line endX="23.0" endY="123.0" layoutX="369.0" layoutY="696.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
-      <Line endX="30.0" endY="14.0" layoutX="659.0" layoutY="768.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
-      <Line endX="-6.0" endY="79.0" layoutX="961.0" layoutY="759.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="665.0" layoutY="737.0" pickOnBounds="true" preserveRatio="true">
+      <Line fx:id="l1721" endX="-168.0" endY="-115.0" layoutX="1148.0" layoutY="479.0" startX="-206.0" startY="11.0" strokeWidth="2.0" />
+      <Line fx:id="l2021" endX="51.2928466796875" endY="20.70709228515625" layoutX="890.0" layoutY="470.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l2126" endX="-10.0" endY="117.0" layoutX="1127.0" layoutY="470.0" startX="-185.0" startY="21.4141845703125" strokeWidth="2.0" />
+      <Line fx:id="l2526" endX="-39.0" endY="20.0" layoutX="1161.0" layoutY="586.0" startX="-241.0" startY="34.0" strokeWidth="2.0" />
+      <Line fx:id="l2025" endX="16.2928466796875" endY="127.70709228515625" layoutX="903.0" layoutY="493.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l2529" endX="-103.0" endY="194.0" layoutX="1084.0" layoutY="600.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l2024" endX="-39.0" endY="20.0" layoutX="711.0" layoutY="492.0" startX="-177.0" startY="111.0" strokeWidth="2.0" />
+      <Line fx:id="l2324" endX="-39.0" endY="20.0" layoutX="578.0" layoutY="583.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
+      <Line fx:id="l2327" endX="-171.0" endY="192.0" layoutX="588.0" layoutY="593.0" startX="-236.70709228515625" startY="32.70709228515625" strokeWidth="2.0" />
+      <Line fx:id="l1823" endX="-434.0" endY="-34.0" layoutX="588.0" layoutY="593.0" startX="-237.4141845703125" startY="32.0" strokeWidth="2.0" />
+      <Line fx:id="l1822" endX="-471.0" endY="-35.0" layoutX="588.0" layoutY="593.0" startX="-441.0" startY="146.0" strokeWidth="2.0" />
+      <Line fx:id="l2223" endX="-25.4141845703125" endY="-71.0" layoutX="376.0" layoutY="696.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
+      <Line fx:id="l2227" endX="23.0" endY="123.0" layoutX="369.0" layoutY="696.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
+      <Line fx:id="l2728" endX="30.0" endY="14.0" layoutX="659.0" layoutY="768.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
+      <Line fx:id="l2829" endX="-6.0" endY="79.0" layoutX="961.0" layoutY="759.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
+      <ImageView id="28" fitHeight="100.0" fitWidth="100.0" layoutX="665.0" layoutY="737.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/gym.png" />
          </image>
@@ -132,48 +133,48 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Line endX="-43.0" endY="-5.0" layoutX="502.0" layoutY="317.0" startX="-76.0" startY="105.0" strokeWidth="2.0" />
-      <Line endX="61.0" endY="84.0" layoutX="594.0" layoutY="400.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="-34.70709228515625" endY="-1.29290771484375" layoutX="460.0" layoutY="424.0" startX="-108.70709228515625" startY="201.70709228515625" strokeWidth="2.0" />
-      <Circle id="19" fill="DODGERBLUE" layoutX="425.0" layoutY="419.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Line fx:id="l919" endX="-43.0" endY="-5.0" layoutX="502.0" layoutY="317.0" startX="-76.0" startY="105.0" strokeWidth="2.0" />
+      <Line fx:id="l1920" endX="61.0" endY="84.0" layoutX="594.0" layoutY="400.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l1923" endX="-34.70709228515625" endY="-1.29290771484375" layoutX="460.0" layoutY="424.0" startX="-108.70709228515625" startY="201.70709228515625" strokeWidth="2.0" />
+      <Circle id="19" fx:id="c19" layoutX="425.0" layoutY="419.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="23" fill="DODGERBLUE" layoutX="351.0" layoutY="624.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="23" fx:id="c23" layoutX="351.0" layoutY="624.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="22" fill="DODGERBLUE" layoutX="148.0" layoutY="737.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="22" fx:id="c22" layoutX="148.0" layoutY="737.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="24" fill="DODGERBLUE" layoutX="533.0" layoutY="604.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="24" fx:id="c24" layoutX="533.0" layoutY="604.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="25" fill="DODGERBLUE" layoutX="920.0" layoutY="621.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="25" fx:id="c25" layoutX="920.0" layoutY="621.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="21" fill="DODGERBLUE" layoutX="942.0" layoutY="491.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="21" fx:id="c21" layoutX="942.0" layoutY="491.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="930.0" layoutY="759.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="29" fitHeight="100.0" fitWidth="100.0" layoutX="930.0" layoutY="759.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/home.png" />
+            <Image url="@../images/office.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="1108.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="26" fitHeight="100.0" fitWidth="100.0" layoutX="1108.0" layoutY="536.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/barber.png" />
          </image>
@@ -181,7 +182,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="364.0" layoutY="759.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="27" fitHeight="100.0" fitWidth="100.0" layoutX="364.0" layoutY="759.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/restaurant.png" />
          </image>
@@ -189,7 +190,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="71.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="18" fitHeight="100.0" fitWidth="100.0" layoutX="71.0" layoutY="471.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/church.png" />
          </image>
@@ -197,10 +198,10 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Line endX="-24.0" endY="-9.0" layoutX="678.0" layoutY="278.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <Line endX="-147.29290771484375" endY="-50.70709228515625" layoutX="802.0" layoutY="319.0" startX="-69.0" startY="36.0" strokeWidth="2.0" />
-      <Line endX="83.0" endY="7.0" layoutX="903.0" layoutY="335.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="958.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+      <Line fx:id="l915" endX="-24.0" endY="-9.0" layoutX="678.0" layoutY="278.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <Line fx:id="l1516" endX="-147.29290771484375" endY="-50.70709228515625" layoutX="802.0" layoutY="319.0" startX="-69.0" startY="36.0" strokeWidth="2.0" />
+      <Line fx:id="l1617" endX="83.0" endY="7.0" layoutX="903.0" layoutY="335.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
+      <ImageView id="17" fitHeight="100.0" fitWidth="100.0" layoutX="958.0" layoutY="284.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/trainStation.png" />
          </image>
@@ -208,8 +209,8 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Line endX="-24.0" endY="-9.0" layoutX="761.0" layoutY="365.0" startX="-72.0" startY="90.0" strokeWidth="2.0" />
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="432.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+      <Line fx:id="l1620" endX="-24.0" endY="-9.0" layoutX="761.0" layoutY="365.0" startX="-72.0" startY="90.0" strokeWidth="2.0" />
+      <ImageView id="9" fitHeight="100.0" fitWidth="100.0" layoutX="432.0" layoutY="227.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/shop.png" />
          </image>
@@ -217,17 +218,17 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Circle id="16" fill="DODGERBLUE" layoutX="734.0" layoutY="355.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="16" fx:id="c16" layoutX="734.0" layoutY="355.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <Circle id="15" fill="DODGERBLUE" layoutX="654.0" layoutY="272.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle id="15" fx:id="c15" layoutX="654.0" layoutY="272.0" onMouseClicked="#vertexClick" radius="7.0" stroke="BLACK" strokeType="INSIDE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="642.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="20" fitHeight="100.0" fitWidth="100.0" layoutX="642.0" layoutY="430.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/center.png" />
          </image>
@@ -285,5 +286,6 @@
             <Font name="Arial Rounded MT Bold" size="19.0" />
          </font>
       </Label>
+      <Button fx:id="startBtn" layoutX="1305.0" layoutY="287.0" mnemonicParsing="false" onAction="#findShortestPath" text="Start" />
    </children>
 </Pane>

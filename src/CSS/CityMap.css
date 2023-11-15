@@ -1,12 +1,3 @@
-#abc {
-    -fx-background-color: green;
-    -fx-text-fill: red;
-}
-
-#scene {
-    -fx-background-color: lightblue;
-}
-
 #map {
     -fx-background-color: #F5F5DC;
 }
@@ -17,4 +8,14 @@
 
 .second-clicked {
     -fx-fill: red;
+}
+
+.color-line {
+    -fx-stroke: #1e90ff;
+    -fx-stroke-width: 4;
+}
+.color-vertex {
+    -fx-fill: #1e90ff;
+    -fx-stroke: #1e90ff;
+    -fx-stroke-width: 2;
 }
