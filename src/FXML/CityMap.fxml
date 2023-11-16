@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<Pane id="map" fx:id="map" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../CSS/CityMap.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CityMapController">
+<Pane id="map" fx:id="map" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1580.0" stylesheets="@../CSS/CityMap.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CityMapController">
    <children>
       <Line fx:id="l1117" endX="47.0" endY="192.0" layoutX="945.0" layoutY="142.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
       <Line fx:id="l411" endX="-168.0" endY="-115.0" layoutX="883.0" layoutY="184.0" startX="-103.0" startY="-24.0" strokeWidth="2.0" />
@@ -286,7 +286,7 @@
             <Font name="Arial Rounded MT Bold" size="19.0" />
          </font>
       </Label>
-      <Pane id="menuPane" fx:id="menuPane" layoutX="1114.0" layoutY="39.0" prefHeight="431.0" prefWidth="480.0">
+      <Pane id="menuPane" fx:id="menuPane" layoutX="1093.0" layoutY="39.0" prefHeight="431.0" prefWidth="480.0">
          <children>
             <Label alignment="CENTER" layoutY="2.0" prefHeight="69.0" prefWidth="471.0" text="Welcome to CityGraph Explorer!" textFill="#003e79">
                <font>

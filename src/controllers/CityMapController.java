@@ -43,7 +43,6 @@ public class CityMapController {
     private Button tryAgainBtn;
 
 
-
     @FXML
     private Line l01, l12, l23, l34, l45, l411, l511, l06, l67, l78, l28, l39, l310, l1011, l1117, l89, l814, l915, l1516, l1617, l1620,
             l2021, l1721, l2126, l2025, l2526, l2529, l2024, l919, l1920, l1923, l713, l612, l1218, l1318, l1823, l1822, l2223,
@@ -166,7 +165,7 @@ public class CityMapController {
                 try {
                     line = (Line) this.getClass().getDeclaredField(path).get(this);
                     line.getStyleClass().add("color-line");
-                    if (end != vertices.getLast() && !places.contains(end)) {
+                    if (end != vertices.getLast() && !places.contains(vertices.get(i + 1))) {
                         circle = (Circle) this.getClass().getDeclaredField(circlePath).get(this);
                         circle.getStyleClass().add("color-vertex");
                     }

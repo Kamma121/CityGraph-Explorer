@@ -3,10 +3,12 @@
 }
 
 .first-clicked {
+    -fx-stroke: green;
     -fx-fill: green;
 }
 
 .second-clicked {
+    -fx-stroke: red;
     -fx-fill: red;
 }
 
@@ -42,6 +44,7 @@
 #tryAgainBtn:hover {
     -fx-background-color: #FFD700;
 }
+
 #menuPane {
     -fx-background-color: #C4A484;
     -fx-background-radius: 15px;
