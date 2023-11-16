@@ -303,7 +303,7 @@
                   <Font name="Lato Bold Italic" size="29.0" />
                </font>
             </Label>
-            <Label fx:id="chooseDestinationLabel" layoutX="7.0" layoutY="151.0" prefHeight="69.0" prefWidth="273.0" text="Choose destination:" textFill="#003e79">
+            <Label fx:id="chooseDestinationLabel" layoutX="7.0" layoutY="151.0" prefHeight="69.0" prefWidth="273.0" text="Choose destination:" textFill="#003e79" visible="false">
                <font>
                   <Font name="Lato Bold Italic" size="29.0" />
                </font>
@@ -313,7 +313,7 @@
                   <Font name="Lato Bold Italic" size="29.0" />
                </font>
             </Label>
-            <Button id="startBtn" fx:id="startBtn" layoutX="181.0" layoutY="252.0" mnemonicParsing="false" onAction="#findShortestPath" prefHeight="53.0" prefWidth="118.0" stylesheets="@../CSS/CityMap.css" text="Start">
+            <Button id="startBtn" fx:id="startBtn" layoutX="181.0" layoutY="252.0" mnemonicParsing="false" onAction="#findShortestPath" prefHeight="53.0" prefWidth="118.0" stylesheets="@../CSS/CityMap.css" text="Start" visible="false">
                <font>
                   <Font name="Arial Rounded MT Bold" size="23.0" />
                </font>
