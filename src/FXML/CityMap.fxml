@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<Pane id="map" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../CSS/CityMap.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CityMapController">
+<Pane id="map" fx:id="map" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../CSS/CityMap.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CityMapController">
    <children>
       <Line fx:id="l1117" endX="47.0" endY="192.0" layoutX="945.0" layoutY="142.0" startX="-165.0" startY="19.0" strokeWidth="2.0" />
       <Line fx:id="l411" endX="-168.0" endY="-115.0" layoutX="883.0" layoutY="184.0" startX="-103.0" startY="-24.0" strokeWidth="2.0" />
@@ -42,7 +42,7 @@
          </cursor>
       </Circle>
       <Line fx:id="l12" endX="-39.0" endY="20.0" layoutX="340.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <ImageView id="1" fitHeight="100.0" fitWidth="100.0" layoutX="121.0" layoutY="14.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="1" accessibleText="Home" fitHeight="100.0" fitWidth="100.0" layoutX="121.0" layoutY="14.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/home.png" />
          </image>
@@ -92,7 +92,7 @@
       </Circle>
       <Line fx:id="l34" endX="61.0" endY="20.0" layoutX="651.0" layoutY="47.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
       <Line fx:id="l45" endX="38.0" endY="20.0" layoutX="959.0" layoutY="48.0" startX="-246.0" startY="20.0" strokeWidth="2.0" />
-      <ImageView id="5" fitHeight="100.0" fitWidth="100.0" layoutX="980.0" layoutY="37.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="5" accessibleText="Forest" fitHeight="100.0" fitWidth="100.0" layoutX="980.0" layoutY="37.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/forest.png" />
          </image>
@@ -125,7 +125,7 @@
       <Line fx:id="l2227" endX="23.0" endY="123.0" layoutX="369.0" layoutY="696.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
       <Line fx:id="l2728" endX="30.0" endY="14.0" layoutX="659.0" layoutY="768.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
       <Line fx:id="l2829" endX="-6.0" endY="79.0" layoutX="961.0" layoutY="759.0" startX="-226.0" startY="42.0" strokeWidth="2.0" />
-      <ImageView id="28" fitHeight="100.0" fitWidth="100.0" layoutX="665.0" layoutY="737.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="28" accessibleText="Gym" fitHeight="100.0" fitWidth="100.0" layoutX="665.0" layoutY="737.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/gym.png" />
          </image>
@@ -166,7 +166,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <ImageView id="29" fitHeight="100.0" fitWidth="100.0" layoutX="930.0" layoutY="759.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="29" accessibleText="Office" fitHeight="100.0" fitWidth="100.0" layoutX="930.0" layoutY="759.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/office.png" />
          </image>
@@ -174,7 +174,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView id="26" fitHeight="100.0" fitWidth="100.0" layoutX="1108.0" layoutY="536.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="26" accessibleText="Barber" fitHeight="100.0" fitWidth="100.0" layoutX="1108.0" layoutY="536.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/barber.png" />
          </image>
@@ -182,7 +182,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView id="27" fitHeight="100.0" fitWidth="100.0" layoutX="364.0" layoutY="759.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="27" accessibleText="Restaurant" fitHeight="100.0" fitWidth="100.0" layoutX="364.0" layoutY="759.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/restaurant.png" />
          </image>
@@ -190,7 +190,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView id="18" fitHeight="100.0" fitWidth="100.0" layoutX="71.0" layoutY="471.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="18" accessibleText="Church" fitHeight="100.0" fitWidth="100.0" layoutX="71.0" layoutY="471.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/church.png" />
          </image>
@@ -201,7 +201,7 @@
       <Line fx:id="l915" endX="-24.0" endY="-9.0" layoutX="678.0" layoutY="278.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
       <Line fx:id="l1516" endX="-147.29290771484375" endY="-50.70709228515625" layoutX="802.0" layoutY="319.0" startX="-69.0" startY="36.0" strokeWidth="2.0" />
       <Line fx:id="l1617" endX="83.0" endY="7.0" layoutX="903.0" layoutY="335.0" startX="-168.0" startY="20.0" strokeWidth="2.0" />
-      <ImageView id="17" fitHeight="100.0" fitWidth="100.0" layoutX="958.0" layoutY="284.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="17" accessibleText="Train station" fitHeight="100.0" fitWidth="100.0" layoutX="958.0" layoutY="284.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/trainStation.png" />
          </image>
@@ -210,7 +210,7 @@
          </cursor>
       </ImageView>
       <Line fx:id="l1620" endX="-24.0" endY="-9.0" layoutX="761.0" layoutY="365.0" startX="-72.0" startY="90.0" strokeWidth="2.0" />
-      <ImageView id="9" fitHeight="100.0" fitWidth="100.0" layoutX="432.0" layoutY="227.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="9" accessibleText="Shopping mall" fitHeight="100.0" fitWidth="100.0" layoutX="432.0" layoutY="227.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/shop.png" />
          </image>
@@ -228,7 +228,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <ImageView id="20" fitHeight="100.0" fitWidth="100.0" layoutX="642.0" layoutY="430.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="20" accessibleText="City center" fitHeight="100.0" fitWidth="100.0" layoutX="642.0" layoutY="430.0" onMouseClicked="#placeClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/center.png" />
          </image>
@@ -286,6 +286,63 @@
             <Font name="Arial Rounded MT Bold" size="19.0" />
          </font>
       </Label>
-      <Button fx:id="startBtn" layoutX="1305.0" layoutY="287.0" mnemonicParsing="false" onAction="#findShortestPath" text="Start" />
+      <Pane id="menuPane" fx:id="menuPane" layoutX="1114.0" layoutY="39.0" prefHeight="431.0" prefWidth="480.0">
+         <children>
+            <Label alignment="CENTER" layoutY="2.0" prefHeight="69.0" prefWidth="471.0" text="Welcome to CityGraph Explorer!" textFill="#003e79">
+               <font>
+                  <Font name="Lato Bold Italic" size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="chooseStartingPointLabel" layoutX="7.0" layoutY="82.0" prefHeight="69.0" prefWidth="273.0" text="Choose starting point:" textFill="#003e79">
+               <font>
+                  <Font name="Lato Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="startingPointLabel" layoutX="190.0" layoutY="98.0" prefHeight="37.0" prefWidth="267.0" textFill="#1b91ff">
+               <font>
+                  <Font name="Lato Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="chooseDestinationLabel" layoutX="7.0" layoutY="151.0" prefHeight="69.0" prefWidth="273.0" text="Choose destination:" textFill="#003e79">
+               <font>
+                  <Font name="Lato Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="destinationPointLabel" layoutX="231.0" layoutY="167.0" prefHeight="37.0" prefWidth="240.0" textFill="#1b91ff">
+               <font>
+                  <Font name="Lato Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Button id="startBtn" fx:id="startBtn" layoutX="181.0" layoutY="252.0" mnemonicParsing="false" onAction="#findShortestPath" prefHeight="53.0" prefWidth="118.0" stylesheets="@../CSS/CityMap.css" text="Start">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="firstFinalCommunicate" alignment="CENTER" layoutX="-4.0" layoutY="263.0" prefHeight="34.0" prefWidth="479.0" text="Your path is ready" visible="false">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="secondFinalCommunicate" alignment="CENTER" layoutY="297.0" prefHeight="34.0" prefWidth="471.0" text="Check it out on map!" visible="false">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Button id="tryAgainBtn" fx:id="tryAgainBtn" layoutX="179.0" layoutY="338.0" mnemonicParsing="false" onAction="#tryAgainAction" text="Try again" visible="false">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
    </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
 </Pane>

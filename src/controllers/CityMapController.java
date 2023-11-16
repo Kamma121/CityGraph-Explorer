@@ -1,13 +1,18 @@
 package controllers;
 
 import graph.Graph;
+import javafx.application.Platform;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
+import javafx.stage.Stage;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -15,11 +20,29 @@ import java.util.Set;
 public class CityMapController {
 
     private int selectedVertexCounter = 0;
-    private int[] destinations = new int[2];
+    private List<Integer> destinations = new ArrayList<>();
     private static Graph connections;
+    @FXML
+    private Pane map;
 
     @FXML
     private Button startBtn;
+    @FXML
+    private Label startingPointLabel;
+    @FXML
+    private Label destinationPointLabel;
+    @FXML
+    private Label chooseStartingPointLabel;
+    @FXML
+    private Label chooseDestinationLabel;
+    @FXML
+    private Label firstFinalCommunicate;
+    @FXML
+    private Label secondFinalCommunicate;
+    @FXML
+    private Button tryAgainBtn;
+
+
 
     @FXML
     private Line l01, l12, l23, l34, l45, l411, l511, l06, l67, l78, l28, l39, l310, l1011, l1117, l89, l814, l915, l1516, l1617, l1620,
@@ -38,15 +61,34 @@ public class CityMapController {
         } else {
             clickedCircle.getStyleClass().add("second-clicked");
         }
-        destinations[selectedVertexCounter] = Integer.parseInt(clickedCircle.getId());
+        destinations.add(Integer.parseInt(clickedCircle.getId()));
         selectedVertexCounter = (selectedVertexCounter + 1) % 2;
+        if (selectedVertexCounter == 1) {
+            this.startingPointLabel.setText("Point on the street");
+            this.chooseStartingPointLabel.setText("Starting point: ");
+            this.chooseDestinationLabel.setVisible(true);
+        } else {
+            this.destinationPointLabel.setText("Point on the street");
+            this.chooseDestinationLabel.setText("Destination point: ");
+            this.startBtn.setVisible(true);
+        }
     }
 
     @FXML
     public void placeClick(Event event) {
         ImageView place = (ImageView) event.getSource();
-        destinations[selectedVertexCounter] = Integer.parseInt(place.getId());
+        place.getStyleClass().add("selected-image");
+        destinations.add(Integer.parseInt(place.getId()));
         selectedVertexCounter = (selectedVertexCounter + 1) % 2;
+        if (selectedVertexCounter == 1) {
+            this.startingPointLabel.setText(place.getAccessibleText());
+            this.chooseStartingPointLabel.setText("Starting point: ");
+            this.chooseDestinationLabel.setVisible(true);
+        } else {
+            this.destinationPointLabel.setText(place.getAccessibleText());
+            this.chooseDestinationLabel.setText("Destination point: ");
+            this.startBtn.setVisible(true);
+        }
     }
 
     public static void initializeConnections() {
@@ -109,16 +151,16 @@ public class CityMapController {
     }
 
     public void findShortestPath() {
-        int startVertex = this.destinations[0];
-        int endVertex = this.destinations[1];
+        int startVertex = this.destinations.get(0);
+        int endVertex = this.destinations.get(1);
         List<Integer> vertices = connections.dijkstra(startVertex, endVertex);
-        new Thread(() -> {
+        Thread animationThread = new Thread(() -> {
             int i = 0;
             while (i + 1 < vertices.size()) {
                 int start = Math.min(vertices.get(i), vertices.get(i + 1));
                 int end = Math.max(vertices.get(i), vertices.get(i + 1));
                 String path = "l" + Integer.toString(start) + Integer.toString(end);
-                String circlePath = "c" + end;
+                String circlePath = "c" + Integer.toString(vertices.get(i + 1));
                 Line line = null;
                 Circle circle = null;
                 try {
@@ -135,6 +177,24 @@ public class CityMapController {
                     i++;
                 }
             }
-        }).start();
+            this.firstFinalCommunicate.setVisible(true);
+            this.secondFinalCommunicate.setVisible(true);
+            this.tryAgainBtn.setVisible(true);
+        });
+        animationThread.start();
+        this.startBtn.setVisible(false);
+    }
+
+    public void tryAgainAction() {
+        Platform.runLater(() -> {
+            try {
+                Stage currentStage = (Stage) map.getScene().getWindow();
+                currentStage.close();
+                application.CityGraphExplorerApplication newApp = new application.CityGraphExplorerApplication();
+                newApp.start(new Stage());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
     }
 }
