@@ -1,8 +1,8 @@
 package graph;
 
 public class Edge {
-    private int targetVertex;
-    private int weight;
+    private final int targetVertex;
+    private final int weight;
 
     public Edge(int targetVertex, int weight) {
         this.targetVertex = targetVertex;
