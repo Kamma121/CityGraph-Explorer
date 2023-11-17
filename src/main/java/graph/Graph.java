@@ -3,8 +3,13 @@ package graph;
 import java.util.*;
 
 public class Graph {
-    public final int numVertices;
+    private final int numVertices;
+
     public final Map<Integer, List<Edge>> adjacencyList;
+
+    public int getNumVertices() {
+        return numVertices;
+    }
 
     public Graph(int numVertices) {
         this.numVertices = numVertices;
@@ -37,7 +42,7 @@ public class Graph {
             }
             if (!visited[currentVertex]) {
                 visited[currentVertex] = true;
-            List<Edge> neighbors = this.adjacencyList.get(currentVertex);
+                List<Edge> neighbors = this.adjacencyList.get(currentVertex);
                 for (Edge edge : neighbors) {
                     int neighbor = edge.getTargetVertex();
                     int currentDistance = distances[currentVertex] + edge.getWeight();
@@ -64,30 +69,5 @@ public class Graph {
         return path;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
