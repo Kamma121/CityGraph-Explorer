@@ -1,4 +1,4 @@
-package controllers;
+package controller;
 
 import graph.Graph;
 import javafx.application.Platform;
@@ -22,9 +22,9 @@ public class CityMapController {
     private int selectedVertexCounter = 0;
     private List<Integer> destinations = new ArrayList<>();
     private static Graph connections;
+    private static Set<Integer> places;
     @FXML
     private Pane map;
-
     @FXML
     private Button startBtn;
     @FXML
@@ -42,15 +42,12 @@ public class CityMapController {
     @FXML
     private Button tryAgainBtn;
 
-
     @FXML
     private Line l01, l12, l23, l34, l45, l411, l511, l06, l67, l78, l28, l39, l310, l1011, l1117, l89, l814, l915, l1516, l1617, l1620,
             l2021, l1721, l2126, l2025, l2526, l2529, l2024, l919, l1920, l1923, l713, l612, l1218, l1318, l1823, l1822, l2223,
             l2324, l2327, l2227, l2728, l2829;
     @FXML
     private Circle c0, c2, c3, c4, c6, c7, c8, c10, c11, c12, c13, c14, c15, c16, c19, c21, c22, c23, c24, c25;
-    private static Set<Integer> places;
-
 
     @FXML
     public void vertexClick(Event event) {
@@ -158,20 +155,22 @@ public class CityMapController {
             while (i + 1 < vertices.size()) {
                 int start = Math.min(vertices.get(i), vertices.get(i + 1));
                 int end = Math.max(vertices.get(i), vertices.get(i + 1));
-                String path = "l" + Integer.toString(start) + Integer.toString(end);
-                String circlePath = "c" + Integer.toString(vertices.get(i + 1));
-                Line line = null;
-                Circle circle = null;
+                String path = "l" + start + end;
+                String circlePath = "c" + vertices.get(i + 1);
+                Line line;
+                Circle circle;
                 try {
                     line = (Line) this.getClass().getDeclaredField(path).get(this);
                     line.getStyleClass().add("color-line");
-                    if (end != vertices.getLast() && !places.contains(vertices.get(i + 1))) {
+                    if (!places.contains(vertices.get(i + 1))) {
                         circle = (Circle) this.getClass().getDeclaredField(circlePath).get(this);
-                        circle.getStyleClass().add("color-vertex");
+                        if (!circle.getStyleClass().contains("first-clicked") && !circle.getStyleClass().contains("second-clicked")) {
+                            circle.getStyleClass().add("color-vertex");
+                        }
                     }
                     Thread.sleep(400);
                 } catch (IllegalAccessException | NoSuchFieldException | InterruptedException e) {
-                    throw new RuntimeException(e);
+                    e.printStackTrace();
                 } finally {
                     i++;
                 }

@@ -23,8 +23,8 @@ public class Graph {
     public void addEdge(int source, int target, int weight) {
         Edge edge = new Edge(target, weight);
         this.adjacencyList.get(source).add(edge);
-        Edge reverseEdge = new Edge(source, weight);
-        this.adjacencyList.get(target).add(reverseEdge);
+        Edge reversedEdge = new Edge(source, weight);
+        this.adjacencyList.get(target).add(reversedEdge);
     }
 
     public List<Integer> dijkstra(int source, int target) {
